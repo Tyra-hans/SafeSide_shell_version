@@ -24,10 +24,10 @@ print('''
                                                         
     ''')
 
-print('==============================================================================================')
-print('=============================Welcome To SafeSide==============================================')
-print('==================Weather alerts to help keep you on the safe side============================')
-print('==============================================================================================')
+print('=======================================================================================================')
+print('=============================Welcome To SafeSide======================================================')
+print('==================Weather alerts to help keep you on the safe side===================================')
+print('====================================================================================================')
 print('''
 
 
@@ -59,9 +59,15 @@ else :
 print('Here is the weather in ' , city)
 
 humidity = data2['main']['humidity']
-temp = data2['mai']
+temp = data2['main']['temp']
+pressure = data2['main']['pressure']
+description = (data['weather'][0]['description'])
 
 print('humidity :', humidity)
+print('temperature :', temp , 'degrees celcius')
+print('pressure :', pressure)
+print('description :' , description)
+
 
 
     
