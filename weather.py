@@ -50,13 +50,36 @@ data2 = res2.json()
 
 # pprint(data2)
 
+print(r''' 
+        
+                     _   _                       _           _   
+                    | | | |                     | |         | |  
+ __      _____  __ _| |_| |__   ___ _ __    __ _| | ___ _ __| |_ 
+ \ \ /\ / / _ \/ _` | __| '_ \ / _ \ '__|  / _` | |/ _ \ '__| __|
+  \ V  V /  __/ (_| | |_| | | |  __/ |    | (_| | |  __/ |  | |_ 
+   \_/\_/ \___|\__,_|\__|_| |_|\___|_|     \__,_|_|\___|_|   \__|
+''')
+
 if data['alerts']['alerts'] == []:
-    print('Nothing to worry about No extreem weather at ', city)
+    print('       Nothing to worry about No extreem weather at ', city)
 
 else :
-    print('alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
+    print('       alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
 
-print('Here is the weather in ' , city)
+print(r''' 
+        
+                     _   _                                           _  
+                    | | | |                                         | |  
+ __      _____  __ _| |_| |__   ___ _ __   _ __ ___ _ __   ___  _ __| |_ 
+ \ \ /\ / / _ \/ _` | __| '_ \ / _ \ '__| | '__/ _ \ '_ \ / _ \| '__| __|
+  \ V  V /  __/ (_| | |_| | | |  __/ |    | | |  __/ |_) | (_) | |  | |_ 
+   \_/\_/ \___|\__,_|\__|_| |_|\___|_|    |_|  \___| .__/ \___/|_|   \__|
+                                                   | |                   
+                                                   |_|   
+''')
+
+
+print(             'Here is the weather in ' , city)
 
 humidity = data2['main']['humidity']
 temp = data2['main']['temp']
