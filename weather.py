@@ -24,10 +24,10 @@ print('''
                                                         
     ''')
 
-print('=======================================================================================================')
-print('=============================Welcome To SafeSide======================================================')
-print('==================Weather alerts to help keep you on the safe side===================================')
-print('====================================================================================================')
+print('=  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =   =  =  =  =  =  =  =  =   =  =   ')
+print('                                  Welcome To SafeSide')
+print('                  Weather alerts to help keep you on the safe side')
+print('=  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =')
 print('''
 
 
@@ -48,7 +48,7 @@ data2 = res2.json()
 
 # pprint(data)
 
-pprint(data2)
+# pprint(data2)
 
 if data['alerts']['alerts'] == []:
     print('Nothing to worry about No extreem weather at ', city)
@@ -61,7 +61,7 @@ print('Here is the weather in ' , city)
 humidity = data2['main']['humidity']
 temp = data2['main']['temp']
 pressure = data2['main']['pressure']
-description = (data['weather'][0]['description'])
+description = (data2['weather'][0]['description'])
 
 print('humidity :', humidity)
 print('temperature :', temp , 'degrees celcius')
