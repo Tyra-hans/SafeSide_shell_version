@@ -1,5 +1,5 @@
 import requests
-
+from pprint import pprint
 
 city = input('Enter your city: ')
 
@@ -8,5 +8,7 @@ url='https://weather.cit.api.here.com/weather/1.0/report.json?product=alerts&nam
 res = requests.get(url)
 
 data = res.json()
+
+pprint(data)
 
 print('alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
