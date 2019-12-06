@@ -3,6 +3,7 @@
 #### Built by **Tyra Hans**
 ## Nature
 SafeSide is an app built using Python.
+This program is run on the terminal.
 
 ## Problem Statement
 Mother nature can be extreem sometimes and the climatic conditions can be life threatening. However, weather is very precitable and with information and proper planning , we are able to keep ourselves on the safe side.
@@ -42,7 +43,7 @@ No known bugs.
 
 ## References
 * [Statistics of death by floods in Kenya 2019](http://floodlist.com/tag/kenya)
-* [Floods and dorught are the deadliest Natural Phenomenon](https://www.livescience.com/32410-whats-the-deadliest-natural-phenomenon.html)
+* [Floods and drought are the deadliest natural phenomenon](https://www.livescience.com/32410-whats-the-deadliest-natural-phenomenon.html)
 
 
 ## Support and contact details
