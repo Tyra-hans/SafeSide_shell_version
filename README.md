@@ -3,6 +3,16 @@
 #### Built by **Tyra Hans**
 ## Nature
 SafeSide is an app built using Python.
+
+## Problem Statement
+Mother nature can be extreem sometimes and the climatic conditions can be life threatening. However, weather is very precitable and with information and proper planning , we are able to keep ourselves on the safe side.
+
+## Solution
+With Safeside, users are able to :
+* get the actual weather conditions of any city in the world
+* get weather alerts of extreem weather conditions such as snowfall, flash floods,heavy rainfall etc
+Thus enabling them to make life saving decisions such as evacuation
+
 ## Setup
 * Clone this repo to your desktop
 * run this in your terminal "git remove set-url" if you wish to have it into your repository
@@ -15,7 +25,7 @@ No known bugs.
 ## Behavior driven devlopment (BDD)
 | Element           | Action               | Behaviour                   |
 | ------------------|:--------------------:| ---------------------------:|
-| Input             | Fill in city         | Displays results per city   |
+| Input             | Key in city          | Displays results per city   |
 
 
 ## Technologies
@@ -29,6 +39,11 @@ No known bugs.
 ## Intallations
 * Requests
 * Pprint
+
+## References
+* [Statistics of death by floods in Kenya 2019](http://floodlist.com/tag/kenya)
+* [Floods and dorught are the deadliest Natural Phenomenon](https://www.livescience.com/32410-whats-the-deadliest-natural-phenomenon.html)
+
 
 ## Support and contact details
 For feedback , complaints or queries :
