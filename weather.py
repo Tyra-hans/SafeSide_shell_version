@@ -36,7 +36,7 @@ print('''
 ''')
 print('                                                                                                    ')
 print('                                                                                                    ')
-city = input('                            Enter your city: ')
+city = input('              Enter your city: ')
 
 url='https://weather.cit.api.here.com/weather/1.0/report.json?product=alerts&name={}&app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg'.format(city)
 
@@ -66,13 +66,13 @@ print(r'''
 ''')
  
 if 'Type' in data:
-    print('               Sorry , City Unavailable')
+    print('                 Sorry , we couldnt find weather alerts for ' , city)
 
 elif data['alerts']['alerts'] == []:
-    print('               Nothing to worry about No extreem weather in ', city)
+    print('                 Nothing to worry about No extreem weather in ', city)
 
 else: 
-    print('               alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
+    print('                 alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
 
 print(r''' 
         
@@ -89,19 +89,25 @@ print(r'''
 
 
 if data2['cod'] == 500 :
-    print('                 Sorry! City unavailable')
+    print('                                                                                                    ')
+    print('                 Sorry! We couldnt find the weather report for ',city)
 else:
-    print(                   city,'weather :' )
+    print('                                                                                                    ')
+    print(                  city,'weather :' )
 
     humidity = data2['main']['humidity']
     temp = data2['main']['temp']
     pressure = data2['main']['pressure']
     description = (data2['weather'][0]['description'])
 
-    print('humidity :', humidity)
-    print('temperature :', temp , 'degrees celcius')
-    print('pressure :', pressure)
-    print('description :' , description)
+    print('                 humidity :', humidity)
+    print('                                                                                                    ')
+    print('                 temperature :', temp , 'degrees celcius')
+    print('                                                                                                    ')
+    print('                 pressure :', pressure)
+    print('                                                                                                    ')
+    print('                 description :' , description)
+    print('                                                                                                    ')
 
 
 
