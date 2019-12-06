@@ -75,17 +75,6 @@ elif data['alerts']['alerts'] == []:
 else: 
     print('               alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
 
-
-
-# print(data['Type'])
-# print(data2['cod'])
-# pprint(data2)
-# if data['alerts']['alerts'] == []:
-#     print('               Nothing to worry about No extreem weather in ', city)
-
-# else :
-#     print('               alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
-
 print(r''' 
         
                      _   _                                           _  
