@@ -64,8 +64,7 @@ print(r'''
   \ V  V /  __/ (_| | |_| | | |  __/ |    | (_| | |  __/ |  | |_ 
    \_/\_/ \___|\__,_|\__|_| |_|\___|_|     \__,_|_|\___|_|   \__|
 ''')
-
-pprint(data) 
+ 
 if 'Type' in data:
     print('               Sorry , City Unavailable')
 
