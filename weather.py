@@ -26,12 +26,16 @@ print('''
 
 print('                                                                                                    ')
 print('                                  Welcome To SafeSide')
+print('                                                                                                    ')
+print('                                                                                                    ')
 print('                  Weather alerts to help keep you on the safe side')
 print('                                                                                                    ')
 print('''
 
 
 ''')
+print('                                                                                                    ')
+print('                                                                                                    ')
 city = input('                            Enter your city: ')
 
 url='https://weather.cit.api.here.com/weather/1.0/report.json?product=alerts&name={}&app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg'.format(city)
@@ -47,6 +51,9 @@ data = res.json()
 data2 = res2.json()
 
 # pprint(data2)
+# print(data)
+
+
 
 print(r''' 
         
@@ -58,14 +65,26 @@ print(r'''
    \_/\_/ \___|\__,_|\__|_| |_|\___|_|     \__,_|_|\___|_|   \__|
 ''')
 
-# pprint(data)
+pprint(data) 
+if 'Type' in data:
+    print('               Sorry , City Unavailable')
+
+elif data['alerts']['alerts'] == []:
+    print('               Nothing to worry about No extreem weather in ', city)
+
+else: 
+    print('               alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
+
+
+
+# print(data['Type'])
 # print(data2['cod'])
 # pprint(data2)
-if data['alerts']['alerts'] == []:
-    print('               Nothing to worry about No extreem weather at ', city)
+# if data['alerts']['alerts'] == []:
+#     print('               Nothing to worry about No extreem weather in ', city)
 
-else :
-    print('               alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
+# else :
+#     print('               alert :' , data['alerts']['alerts'][0]['description'],'. Stay safe')
 
 print(r''' 
         
@@ -80,11 +99,12 @@ print(r'''
 ''')
 
 
-print('                   Here is the weather in ' , city)
 
 if data2['cod'] == 500 :
-    print('Sorry! City unavailable')
+    print('                 Sorry! City unavailable')
 else:
+    print(                   city,'weather :' )
+
     humidity = data2['main']['humidity']
     temp = data2['main']['temp']
     pressure = data2['main']['pressure']
